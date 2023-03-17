@@ -1,0 +1,18 @@
+package com.example.a7minworkout
+
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.FrameLayout
+import android.widget.Toast
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+        val flStarButton : FrameLayout = findViewById(R.id.flStart)
+        flStarButton.setOnClickListener{
+            Toast.makeText(this@MainActivity, "Here we will start the exercise", Toast.LENGTH_SHORT).show()
+        }
+    }
+}
